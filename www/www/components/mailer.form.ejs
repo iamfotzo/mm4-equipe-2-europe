@@ -1,0 +1,43 @@
+<form method="POST" action="#" class="form-newsletter">
+    <label class="label-white" for="email">Entre ton e-mail</label>
+    <input type="email" class="input-white" placeholder="E-mail" required>
+    <button type="submit" class="button-form-white">S'inscrire à la newsletter</button>
+</form>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', () => {
+
+document.querySelector('form').addEventListener('submit', event => {
+    event.preventDefault();
+
+    console.log(document.querySelector('input').value)
+
+    fetch('http://localhost:3000/mailer', {
+        method: 'POST',
+        body: JSON.stringify( { email: document.querySelector('input').value } ),
+        headers: {
+            "Content-type": "application/json"
+        }
+    })
+    .then( apiResponse => {
+        console.log(apiResponse)
+        return apiResponse.json()
+    } )
+    .then( jsonResponse => {
+        fetch('https://ldp.dwsapp.io/mm4-europe/',{
+            method:'POST',
+            body: JSON.stringify( { email: document.querySelector('input').value } ),
+            headers: {
+                "Content-type": "application/json"
+            }
+        })
+    })
+    .catch( apiError => console.error(apiError) )
+})
+
+
+})
+
+</script>
+

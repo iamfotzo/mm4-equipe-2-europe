@@ -1,0 +1,473 @@
+@import url(../fonts/CircularStd/css/circular-std.css);
+@import url(../fonts/PublicSans/css/public-sans.css);
+
+@media screen and (max-width:375px){
+
+/* 1rem => 10px */  
+html{
+    font-size: 62.5%; 
+    overflow-x: hidden;
+}
+
+/* Supprimer les marges, mettre un bg en blanc */
+body{   
+    padding: 0;
+    margin: 0;
+    background-color: #F6F7FB;
+}
+
+/* Définir les typos et les styles */
+h1{
+    font-family: 'PublicSans', sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+    font-size: 3.2rem;
+    line-height: 4rem;
+}
+
+h2{
+    font-family: 'PublicSans', sans-serif;
+    color: #0A2266;
+    font-weight: 600;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.6;
+}
+
+h3{
+    font-family: 'PublicSans', sans-serif;
+    color: #0A2266;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.5;   
+}
+
+h4{
+    font-family: 'PublicSans', sans-serif;
+    color: #0A2266;
+    opacity: 0.4;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 10rem 2.4rem 0.9rem 2.4rem;
+}
+
+p{
+    font-family: 'CircularStd', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #7f7f7f;
+}
+
+a{
+    font-family: 'PublicSans', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.5; 
+    text-decoration: none;
+}
+
+/* HEADER*/
+.header-home{
+    height: 494px;
+    width: auto;
+    background-image: linear-gradient(139deg, #365098, #103499);
+}
+
+.header-white{
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+    padding: 0 0 1.5rem 0;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    margin: 0 2.4rem 0 2.4rem;    
+}
+
+nav .logo{
+    width: 11rem;
+    height: 3.4rem;
+}
+
+img{
+    width: 100%;
+    margin: auto;
+}
+
+/*HERO*/
+.hero h1{
+    margin: 10rem 2.3rem 1.5rem 2.3rem;
+}
+
+.hero p{
+    margin: 0rem 3.4rem 1.7rem 3.3rem;
+    color: #ffffff;
+    opacity: 0.9;
+    font-size: 1.4rem;
+}
+
+.button-white{
+    display: flex;
+    flex-flow: column;
+    margin: 0 2.4rem 0 2.4rem;
+    padding: 1.4rem 0 1.4rem 0;
+    color: #103499;
+    border-radius: 2px;
+    background-color: #ffffff;
+}
+
+.button-blue{
+    display: flex;
+    flex-flow: column;
+    margin: 3rem 2.4rem 0 2.4rem;
+    padding: 1.4rem 0 1.4rem 0;
+    color: #ffffff;
+    border-radius: 2px;
+    background-color: #103499;
+}
+
+/* Bannières */
+.banner{
+    margin-top: 6.4rem;
+}
+
+/* BODY */
+
+/* Section Calendrier */
+.calendrier{
+    background-color: white;
+    padding-bottom: 4rem;
+}
+
+.calendrier h2{
+    margin: 0.8rem 2.4rem 1.4rem 2.4rem;
+}
+
+.calendrier p{
+    margin: 0 2.4rem 0 2.4rem;
+}
+
+/* Sections background bleu */
+.section{
+    background-color: #F6F7FB;
+    padding-bottom: 4rem;
+}
+
+.section h2{
+    padding-top: 3.8rem;
+    margin: 0rem 2.4rem 1.4rem 2.4rem;
+}
+
+.section h3{
+    padding-top: 3.8rem;
+    margin: 0rem 2.4rem 1.4rem 2.4rem;
+}
+
+.section p{
+    margin: 0 2.4rem 0 2.4rem;
+}
+
+.section img{
+    margin: 3.2rem 0 0 0;
+}
+
+/* Sections background blanc */
+.section-blanche {
+    background-color: #ffffff;
+    padding-bottom: 4rem;
+}
+
+.section-blanche h2{
+    padding-top: 3.8rem;
+    margin: 0rem 2.4rem 1.4rem 2.4rem;
+}
+
+.section-blanche p{
+    margin: 0 2.4rem 0 2.4rem;
+}
+
+.section-blanche img{
+    margin: 3.2rem 0 3.2rem 0;
+}
+
+/* Section Newsletter */
+.newsletter{
+    background-image: linear-gradient(139deg, #365098, #103499);
+    padding: 2.8rem 0 3.2rem 0;
+}
+
+.newsletter h2{
+    margin: 0.8rem 2.4rem 1.4rem 2.4rem;
+    color: #ffffff;
+}
+
+.newsletter p{
+    margin: 0 2.4rem 0 2.4rem;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.label-white{
+    display: block;
+    color: #ffffff;
+    font-family: 'CircularStd';
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin: 2.7rem 0 .8rem 0;
+}
+
+.label-dark{
+    display: block;
+    color: #103499;
+    font-family: 'CircularStd';
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin: 2.7rem 0 .8rem 0;
+}
+
+.newsletter ::placeholder{ 
+    color: #ffffff;
+    opacity: 0.6;
+    font-family: 'CircularStd';
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.form-resultats ::placeholder{
+    color: #103499;
+    opacity: 0.6;
+    font-family: 'CircularStd';
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.input-white{
+    background-color: transparent;
+    border: solid .2rem #ffffff;
+    border-radius: .2rem;
+    padding: 1.4rem 2.4rem 1.4rem 2.4rem;
+}
+
+.input-dark{
+    background-color: transparent;
+    border: solid .2rem #103499;
+    border-radius: .2rem;
+    padding: 1.4rem 2.4rem 1.4rem 2.4rem;
+}
+
+.form-newsletter{
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    margin: 0 2.4rem 0 2.4rem;
+}
+
+.form-resultats{
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    margin: 0 2.4rem 0 2.4rem;
+}
+
+.button-form-white{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 1.6rem 0 0 0;
+    padding: 1.4rem 0 1.4rem 0;
+    color: #103499;
+    border-radius: 2px;
+    background-color: #ffffff;
+    font-family: 'PublicSans', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.5; 
+    border: none;
+    text-decoration: none;
+}
+
+.button-form-dark{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 1.6rem 0 0 0;
+    padding: 1.4rem 0 1.4rem 0;
+    color: #ffffff;
+    border-radius: 2px;
+    background-color: #103499;
+    font-family: 'PublicSans', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.5; 
+    border: none;
+    text-decoration: none;
+}
+
+/* Footer + Rappel Quiz */
+.footer-big{    
+    background-image: linear-gradient(139deg, #365098, #103499);
+    padding: 2.8rem 0 1.6rem 0;
+}
+
+.footer-big h2{
+    margin: 0.8rem 2.4rem 1.4rem 2.4rem;
+    color: #ffffff;
+}
+
+.footer-big p{
+    margin: 0 2.4rem 1.7rem 2.4rem;
+    font-size: 1.4rem;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.footer-big p:last-child{
+    margin: 2.8rem 0 0 0;
+    font-size: 1.2rem;
+}
+
+/* Footer solo */
+.footer-little{    
+    background-image: linear-gradient(139deg, #365098, #103499);
+}
+
+.footer-little p:last-child{
+    padding: 1.4rem 2.4rem 1.6rem 2.4rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+/* Réparation d'un bug de la margin sur une page */
+.footer-little-bug{    
+    background-image: linear-gradient(139deg, #365098, #103499);
+}
+
+.footer-little-bug p{
+    padding: 1.4rem 2.4rem 1.6rem 2.4rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+    opacity: 0.9;
+    margin: -1.4rem 0rem -1.4rem 0rem;
+}
+
+/* Quiz */
+
+.list-solution{
+    margin: 0 2.4rem 0 2.4rem;
+    display: flex;
+    flex-flow: column;
+}
+
+.list-solution input {
+    position: absolute;
+    left: -9999px;
+}
+
+.list-solution label {
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    font-family: 'CircularStd';
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: .8rem;
+    padding: 2rem 3.5rem 2rem 6.2rem;
+    border: solid .1rem #0a2266;
+    border-radius: .2rem;
+    color: #103499;
+    background-color: rgba(16, 52, 153, 0.1);
+    cursor: pointer;
+    user-select: none;
+}
+
+.list-solution label::before {
+    content: '';
+    display: block;
+    position: absolute;
+    margin: 1.2rem .8rem 1.2rem .8rem;
+    left: 1.2rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    border: .1rem solid #103499;
+    border-radius: 10rem;
+    transition: background-color .2s;
+}
+
+.list-solution input:checked + label::before {
+    background-color: #103499;
+}
+
+.validate {
+    margin: 1.6rem 0 4rem 0;
+    padding: 1.4rem 2.8rem 1.4rem 2.8rem;
+    color: #ffffff;
+    border-radius: 2px;
+    background-color: #103499;
+    font-family: 'PublicSans', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.5; 
+    border: none;
+    text-decoration: none;
+}
+
+.list-solution button:disabled, .list-solution button[disabled] {
+    margin: 1.6rem 0 4rem 0;
+    padding: 1.4rem 2.8rem 1.4rem 2.8rem;
+    color: #ffffff;
+    border-radius: 2px;
+    font-family: 'PublicSans', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.5; 
+    border: none;
+    text-decoration: none;
+    background-color: #103499;
+    color: #ffffff;
+    opacity: .4;
+}
+
+.list-solution .input-vert{
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    font-family: 'CircularStd';
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: .8rem;
+    padding: 2rem 3.5rem 2rem 6.2rem;
+    border: solid 1px #219653;
+    border-radius: .2rem;
+    color: #219653;
+    background-color: rgba(33, 150, 83, 0.15);
+    cursor: pointer;
+    user-select: none;
+}
+
+.list-solution .input-vert::before{
+    background-color: #219653;
+    border: solid 2px #219653;
+}
+
+.list-solution input:checked + .input-vert::before {
+    background-color: #219653;
+}
+
+}

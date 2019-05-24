@@ -1,0 +1,16 @@
+<% include ../components/header.ejs %>
+
+    <header class="header-white">
+        <nav>
+                <a class="logo" href="/"><img class="logo" src="/img/logo.png"/></a>
+                <a class="menu" href="#"><img class="menu" src="/img/menu-dark.png"/></a>
+        </nav>
+    </header>
+    <img src="/img/quiz.png" alt="" class="banner">
+    <section class="section">
+        <h2>Reçois tes résultats <br>par e-mail</h2>
+        <p>Entre ton adresse mail pour de recevoir tes résultats, tu pourras également être notifié le jour du vote.</p>
+        <% include ../components/resultats.form.ejs %>
+    </section>
+
+<% include ../components/footer.ejs %>
